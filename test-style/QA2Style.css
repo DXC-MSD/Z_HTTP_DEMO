@@ -1,0 +1,646 @@
+frame {
+    border: 1 solid gray;
+}
+
+body {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 25px;
+    background-color: #000080;
+    color: #CCCCCC;
+    display: inline;
+
+}
+
+.main {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #000080;
+    color: #CCCCCC;
+    display: inline;
+	margin: 0;
+}
+.pre_fmt {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #000080;
+    display: inline;
+	margin: 0;
+}
+
+.pre_fmt_rev {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #CCCCCC;
+ 	color: #000080;
+    display: inline;
+	margin: 0;
+}
+
+.reversed {
+	background-color: #CCCCCC;
+ 	color: #000080;
+}
+
+.debug {
+	font-family: Arial Monospaced, Courier New;
+    color: black;
+    display: inline;
+}
+
+body.navigation {
+    color: #CCCCCC;
+    background-color: #000080;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+	font-family: Arial Monospaced, Courier New;
+    display: inline;
+}
+
+div.bold {
+	font-family: Arial Monospaced, Courier New;
+    /*font-weight: bold;*/
+ 	color: #FFFFFF;
+ }
+
+
+div.underlineNew {
+	border-top: 1px solid #FFF;
+	width:100%;
+}
+
+div.secure {
+	background-color: black;
+	color: gray;
+}
+div.blinking {
+	color: red;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:link {
+    color: #CCCCCC;
+}
+
+.Action_button {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 25px;
+    width: 104px;
+    height: 32px;
+}
+
+input {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 25px;
+	vertical-align: top;
+}
+
+.output_cell1 {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 25px;
+    vertical-align: top;
+    color: #CCCCCC;
+    background-color: #000080;
+}
+
+.output_cell {
+	font-family: Arial Monospaced, Courier New;
+    vertical-align: top;
+    /*color: #FFFFFF;*/
+    border: thin;
+    /* background-color: #000080; */
+}
+
+input.input_cell {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+ 	color: #FFFFFF;
+    background-color:  #000080;
+    border-width: 1;
+}
+input.input_cell_right {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+    text-align: right;
+ 	color: #FFFFFF;
+    background-color:  #000080;
+}
+input.input_cell_reversed {
+    font-family: Arial Monospaced, Courier New;
+    color:  #000080;
+	background-color: #CCCCCC;
+	vertical-align: top;
+	border-width: 1px;
+    height: 27px; 
+}
+
+input.invisibleSubmit {
+    font-family: Arial Monospaced, Courier New;
+	color:  #000080;
+    vertical-align: bottom;
+    background-color: transparent;
+    border: none;
+}
+
+.menu {
+    color: black;
+    background-color:  #000080;
+}
+
+.main_menu {
+    color: black;
+    background-color:  #000080;
+}
+
+.menu P {
+}
+
+.menu a, a:visited, a:link {
+    font-size: x-small;
+    color: #CCCCCC;
+}
+
+.navigation.app {
+    font-size: 100%;
+}
+
+.navigation.second-tier {
+    font-size: 100%;
+}
+
+.navigation.third-tier {
+    font-size: 80%;
+}
+
+.navigation table {
+    background-color:  #000080;
+    padding: 0;
+    margin: 0;
+}
+
+
+.popper
+{
+position : absolute;
+visibility : hidden;
+zIndex: 9999;
+}
+
+
+.input_cell {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: middle;
+ 	color: #FFFFFF;
+ 	height: 27px;
+ 	line-height: 100%;
+}
+
+.input_cell1 {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+ 	color: #151515;
+ 	border: 2px; 	
+}
+
+.special_input_cell {
+    color:  #000080;
+    background-color: #CCCCCC;
+    font-family: Arial Monospaced, Courier New;
+    font-size: 20px;
+    font-style: italic;
+    vertical-align: top;
+}
+
+.text_label {
+    font-family: Arial Monospaced, Courier New;
+	text-align: right;
+    vertical-align: top;
+}
+
+.error-heading {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.error {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.stacktrace {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.page_heading {
+    color:  #000080;
+    background-color: #CCCCCC;
+    padding: 4;
+}
+
+.inner_table {
+    border: 2 #DDDDBD solid;
+    vertical-align: top;
+}
+
+.inner_table td {
+    vertical-align: top;
+}
+
+
+
+.inner_table tr {
+    vertical-align: top;
+}
+
+.inner_table th {
+    background-color:  #000080;
+    padding: 4;
+}
+
+.tinyInfo {
+    vertical-align: top;
+}
+
+.tinyInfo {
+    vertical-align: top;
+    font-size: 9px;
+}
+
+.Error {
+    color: red;
+}
+
+.Message {
+    color: white;
+}
+
+.Warning {
+    color: #CCCCCC;
+}
+
+.break {
+    height: 25px;
+}
+
+.main_table {
+    width: 100%;
+}
+
+.fab_button {
+    cursor: hand;
+}
+
+img.edit_button {
+    cursor: hand;
+}
+
+.integer_data {
+    text-align: right;
+}
+
+.long_data {
+    text-align: right;
+}
+
+.float_data {
+    text-align: right;
+}
+
+.decimal_data {
+    text-align: right;
+}
+
+.money_data {
+    text-align: right;
+}
+
+.string_data {
+    text-align: left;
+}
+
+.fixed_length_string_data {
+    text-align: left;
+}
+
+.date_data {
+    text-align: left;
+}
+
+.timestamp_date {
+    text-align: left;
+}
+
+.cmenu              {position: absolute;
+                 font-family: MS Sans Serif;
+                 font-size: 25px;
+                 background-color: menu;
+                 color: menutext;
+                 border: 4px threedhighlight outset;
+                 cursor: default;
+                 visibility: hidden;
+                 line-height: 140%;}
+
+.cvisibleMenu   {position: absolute;
+                 font-family: MS Sans Serif;
+                 font-size: 25px;
+                 background-color: menu;
+                 color: menutext;
+                 border: 4px threedhighlight outset;
+                 cursor: default;
+                 visibility: visible;
+                 line-height: 140%;}
+
+.cmenuItem      {color: menutext;
+                 background-color: menu;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;}
+
+.cmenuItemOver  {color: highlighttext;
+                 background-color: highlight;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;}
+
+.cmenuItemOver A    {color: highlighttext;
+                 background-color: highlight;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;
+                 cursor: default;}
+
+.cmenuItem A        {color: menutext;
+                 background-color: menu;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;
+                 cursor: default;}
+
+.cmore          {font-family: WebDings;
+                 text-align: right;
+                 position: absolute;}
+
+.fakelink               {color: blue;
+                         text-decoration: underline;
+                        }
+.bold {
+    font-family: Arial Monospaced, Courier New;
+	/*font-weight: bold;*/
+ 	color: #FFFFFF;
+}
+ 
+.label {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 25px;	
+}
+
+.pos {position: absolute; }
+
+.x1 {left:1.2ex}
+.x2 {left:2.4ex}
+.x3 {left:3.6ex}
+.x4 {left:4.8ex}
+.x5 {left:6.0ex}
+.x6 {left:7.2ex}
+.x7 {left:8.4ex}
+.x8 {left:9.6ex}
+.x9 {left:10.8ex}
+.x10 {left:12.0ex}
+.x11 {left:13.2ex}
+.x12 {left:14.4ex}
+.x13 {left:15.6ex}
+.x14 {left:16.8ex}
+.x15 {left:18.0ex}
+.x16 {left:19.2ex}
+.x17 {left:20.4ex}
+.x18 {left:21.6ex}
+.x19 {left:22.8ex}
+.x20 {left:24.0ex}
+.x21 {left:25.2ex}
+.x22 {left:26.4ex}
+.x23 {left:27.6ex}
+.x24 {left:28.8ex}
+.x25 {left:30.0ex}
+.x26 {left:31.2ex}
+.x27 {left:32.4ex}
+.x28 {left:33.6ex}
+.x29 {left:34.8ex}
+.x30 {left:36.0ex}
+.x31 {left:37.2ex}
+.x32 {left:38.4ex}
+.x33 {left:39.6ex}
+.x34 {left:40.8ex}
+.x35 {left:42.0ex}
+.x36 {left:43.2ex}
+.x37 {left:44.4ex}
+.x38 {left:45.6ex}
+.x39 {left:46.8ex}
+.x40 {left:48.0ex}
+.x41 {left:49.2ex}
+.x42 {left:50.4ex}
+.x43 {left:51.6ex}
+.x44 {left:52.8ex}
+.x45 {left:54.0ex}
+.x46 {left:55.2ex}
+.x47 {left:56.4ex}
+.x48 {left:57.6ex}
+.x49 {left:58.8ex}
+.x50 {left:60.0ex}
+.x51 {left:61.2ex}
+.x52 {left:62.4ex}
+.x53 {left:63.6ex}
+.x54 {left:64.8ex}
+.x55 {left:66.0ex}
+.x56 {left:67.2ex}
+.x57 {left:68.4ex}
+.x58 {left:69.6ex}
+.x59 {left:70.8ex}
+.x60 {left:72.0ex}
+.x61 {left:73.2ex}
+.x62 {left:74.4ex}
+.x63 {left:75.6ex}
+.x64 {left:76.8ex}
+.x65 {left:78.0ex}
+.x66 {left:79.2ex}
+.x67 {left:80.4ex}
+.x68 {left:81.6ex}
+.x69 {left:82.8ex}
+.x70 {left:84.0ex}
+.x71 {left:85.2ex}
+.x72 {left:86.4ex}
+.x73 {left:87.6ex}
+.x74 {left:88.8ex}
+.x75 {left:90.0ex}
+.x76 {left:91.2ex}
+.x77 {left:92.4ex}
+.x78 {left:93.6ex}
+.x79 {left:94.8ex}
+.x80 {left:96.0ex}
+
+.xi1 {left:0.6ex}
+.xi2 {left:1.8ex}
+.xi3 {left:3.0ex}
+.xi4 {left:4.2ex}
+.xi5 {left:5.4ex}
+.xi6 {left:6.6ex}
+.xi7 {left:7.8ex}
+.xi8 {left:9.0ex}
+.xi9 {left:10.2ex}
+.xi10 {left:11.4ex}
+.xi11 {left:12.6ex}
+.xi12 {left:13.8ex}
+.xi13 {left:15.0ex}
+.xi14 {left:16.2ex}
+.xi15 {left:17.4ex}
+.xi16 {left:18.6ex}
+.xi17 {left:19.8ex}
+.xi18 {left:21.0ex}
+.xi19 {left:22.2ex}
+.xi20 {left:23.4ex}
+.xi21 {left:24.6ex}
+.xi22 {left:25.8ex}
+.xi23 {left:27.0ex}
+.xi24 {left:28.2ex}
+.xi25 {left:29.4ex}
+.xi26 {left:30.6ex}
+.xi27 {left:31.8ex}
+.xi28 {left:33.0ex}
+.xi29 {left:34.2ex}
+.xi30 {left:35.4ex}
+.xi31 {left:36.6ex}
+.xi32 {left:37.8ex}
+.xi33 {left:39.0ex}
+.xi34 {left:40.2ex}
+.xi35 {left:41.4ex}
+.xi36 {left:42.6ex}
+.xi37 {left:43.8ex}
+.xi38 {left:45.0ex}
+.xi39 {left:46.2ex}
+.xi40 {left:47.4ex}
+.xi41 {left:48.6ex}
+.xi42 {left:49.8ex}
+.xi43 {left:51.0ex}
+.xi44 {left:52.2ex}
+.xi45 {left:53.4ex}
+.xi46 {left:54.6ex}
+.xi47 {left:55.8ex}
+.xi48 {left:57.0ex}
+.xi49 {left:58.2ex}
+.xi50 {left:59.4ex}
+.xi51 {left:60.6ex}
+.xi52 {left:61.8ex}
+.xi53 {left:63.0ex}
+.xi54 {left:64.2ex}
+.xi55 {left:65.4ex}
+.xi56 {left:66.6ex}
+.xi57 {left:67.8ex}
+.xi58 {left:69.0ex}
+.xi59 {left:70.2ex}
+.xi60 {left:71.4ex}
+.xi61 {left:72.6ex}
+.xi62 {left:73.8ex}
+.xi63 {left:75.0ex}
+.xi64 {left:76.2ex}
+.xi65 {left:77.4ex}
+.xi66 {left:78.6ex}
+.xi67 {left:79.8ex}
+.xi68 {left:81.0ex}
+.xi69 {left:82.2ex}
+.xi70 {left:83.4ex}
+.xi71 {left:84.6ex}
+.xi72 {left:85.8ex}
+.xi73 {left:87.0ex}
+.xi74 {left:88.2ex}
+.xi75 {left:89.4ex}
+.xi76 {left:90.6ex}
+.xi77 {left:91.8ex}
+.xi78 {left:93.0ex}
+.xi79 {left:94.2ex}
+.xi80 {left:95.4ex}
+
+.y1 {top:0px}
+.y2 {top:32px}
+.y3 {top:64px}
+.y4 {top:96px}
+.y5 {top:128px}
+.y6 {top:160px}
+.y7 {top:192px}
+.y8 {top:224px}
+.y9 {top:256px}
+.y10 {top:288px}
+.y11 {top:320px}
+.y12 {top:352px}
+.y13 {top:384px}
+.y14 {top:416px}
+.y15 {top:448px}
+.y16 {top:480px}
+.y17 {top:512px}
+.y18 {top:544px}
+.y19 {top:576px}
+.y20 {top:608px}
+.y21 {top:640px}
+.y22 {top:672px}
+.y23 {top:704px}
+.y24 {top:736px}
+.y25 {top:768px}
+.y26 {top:800px}
+.y27 {top:832px}
+.y28 {top:864px}
+.y29 {top:896px}
+.y30 {top:928px}
+.y31 {top:960px}
+.y32 {top:992px}
+.y33 {top:1024px}
+.y34 {top:1056px}
+
+.z-0{z-index:-1}
+.z-1{z-index:1}
+.z-2{z-index:2}
+
+.w-100{width: 100%}
+
+textarea.notes {
+	font-size: 100%;
+	color: #FFFFFF;
+	background-color: #000080;
+	overflow: hidden;
+	font-family: Arial Monospaced, Courier New;
+	height: 512px;
+	padding: 0px;
+	margin: 0px;
+    line-height: 32px;
+}
+
+textarea.diary {
+	font-size: 100%;
+	color: #FFFFFF;
+	background-color: #000080;
+	overflow: hidden;
+	font-family: Arial Monospaced, Courier New;
+	height: 196px;
+	padding: 0px;
+	margin: 0px;
+    line-height: 28px;
+}
+
+iframe.mainFrame3 {
+	height: 86%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.defaultScreenTitleStyle{
+	width:98%;
+	left:11px;
+	text-align:center;
+}

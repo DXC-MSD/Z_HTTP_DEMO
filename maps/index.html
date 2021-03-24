@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Maps</title>
+    <script type="text/javascript" src="js/vis-network.min.js"></script>
+    <link href="css/vis-network.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #mynetwork {
+            width: 80%;
+            height: 900px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mynetwork"></div>
+    <script type="text/javascript">
+
+        function drawMap(extJson) {
+
+            // create an array with nodes
+            var nodes = new vis.DataSet(extJson.nodes);
+
+            // create an array with edges
+            var edges = new vis.DataSet(extJson.edges);
+
+            // create a network
+            var container = document.getElementById('mynetwork');
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+
+            var options = {
+                nodes: {
+                    color: '#444499',
+                    fixed: false,
+                    font: '12px verdana white',
+                    scaling: {
+                        label: true
+                    },
+                    physics: false,
+                    shadow: true,
+                    shape: "box",
+                    shapeProperties: {
+                        borderRadius: 0
+                    }
+                },
+                edges: {
+                    //arrows: 'to, from',
+                    color: {
+                        color:'gray',
+                        highlight: 'black'
+                    },
+                    font: '12px arial #ff0000',
+                    scaling: {
+                        label: true,
+                    },
+                    physics: false,
+                    shadow: false,
+                    smooth: false,
+                    width: 2
+                }
+            }
+
+            var network = new vis.Network(container, data, options);
+
+        }
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+
+                var loadedJson = JSON.parse(this.responseText);
+
+                drawMap(loadedJson);
+
+            }
+        };
+        xmlhttp.open("GET", "nodes.json", true);
+        xmlhttp.send();
+
+
+    </script>
+</body>
+
+</html>

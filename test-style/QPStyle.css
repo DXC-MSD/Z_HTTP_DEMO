@@ -1,0 +1,319 @@
+frame {
+	border: 1 solid gray;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #FFFFDF;
+	color: black;
+    display: inline;
+
+}
+
+.main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: white;
+	color: #073C47;
+    	display: inline;
+
+}
+
+.debug {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+    	display: inline;
+}
+
+body.navigation {
+	color: #000000;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+div {
+    white-space: pre;
+    display: inline;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+a:visited {
+	color: #666666;
+}
+
+a:link {
+	color: #666666;
+}
+
+input {
+	font-size: 10pt;
+	vertical-align: top;
+}
+
+.output_cell1 {
+	font-size: 24pt;
+	color:red;
+	vertical-align: top;
+}
+
+input.input_cell {
+	font-size: 10pt;
+	vertical-align: top;
+}
+input.input_cell_reverse {
+	font-size: 10pt;
+        background-color: yellow;
+	vertical-align: top;
+}
+
+input.invisibleSubmit {
+	font-family: Courier New;
+	font-size: 12pt;
+	color: #FFFFDF;
+	vertical-align: bottom;
+	background-color: transparent;
+	border: none;
+}
+
+.menu {
+	color: black;
+	background-color: #EAF3F4;
+}
+
+.main_menu {
+	color: black;
+	background-color: #DDDDBD;
+}
+
+.menu P {
+	font-size: 12pt;
+}
+
+.menu a, a:visited, a:link {
+	font-size: x-small;
+	color: black;
+}
+
+.navigation.app {
+	font-size: 100%;
+}
+
+.navigation.second-tier {
+	font-size: 100%;
+}
+
+.navigation.third-tier {
+	font-size: 80%;
+}
+
+.navigation table {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+
+.popper
+{
+position : absolute;
+visibility : hidden;
+zIndex: 9999;
+}
+
+
+.input_cell {
+	font-size: 10pt;
+	vertical-align: top;
+}
+
+.special_input_cell {
+	color: yellow;
+	background-color: black;
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: italic;
+	vertical-align: top;
+}
+
+.text_label {
+	font-size: 10pt;
+	text-align: right;
+	vertical-align: top;
+}
+
+.error-heading {
+	font-size: 12pt;
+}
+
+.error {
+	
+}
+
+.stacktrace {
+	font-size: 10pt
+}
+
+.page_heading {
+	background-color: #DDDDBD;
+	padding: 4;
+}
+
+.inner_table {
+	border: 2 #DDDDBD solid;
+	vertical-align: top;
+}
+
+.inner_table td {
+	vertical-align: top;
+}
+
+
+
+.inner_table tr {
+	vertical-align: top;
+}
+
+.inner_table th {
+	font-size: 10pt;
+	background-color: #DDDDBD;
+	padding: 4;
+}
+
+.tinyInfo {
+	vertical-align: top;
+}
+
+.tinyInfo {
+	vertical-align: top;
+	font-size: 7pt;
+}
+
+.Error {
+	color: red;
+}
+
+.Message {
+	color: black;
+}
+
+.Warning {
+	color: blue;
+}
+
+.break {
+	height: 15pt;
+}
+
+.main_table {
+	width: 100%;
+}
+
+.fab_button {
+	cursor: hand;
+}
+
+img.edit_button {
+	cursor: hand;
+}
+
+.integer_data {
+	text-align: right;
+}
+
+.long_data {
+	text-align: right;
+}
+
+.float_data {
+	text-align: right;
+}
+
+.decimal_data {
+	text-align: right;
+}
+
+.money_data {
+	text-align: right;
+}
+
+.string_data {
+	text-align: left;
+}
+
+.fixed_length_string_data {
+	text-align: left;
+}
+
+.date_data {
+	text-align: left;
+}
+
+.timestamp_date {
+	text-align: left;
+}
+
+.cmenu  			{position: absolute;
+				 font-family: MS Sans Serif;
+				 font-size: 10pt;
+				 background-color: menu;
+				 color: menutext;
+				 border: 2px threedhighlight outset;
+				 cursor: default;
+				 visibility: hidden;
+				 line-height: 140%;}
+
+.cvisibleMenu	{position: absolute;
+				 font-family: MS Sans Serif;
+				 font-size: 10pt;
+				 background-color: menu;
+				 color: menutext;
+				 border: 2px threedhighlight outset;
+				 cursor: default;
+				 visibility: visible;
+				 line-height: 140%;}
+				 
+.cmenuItem		{color: menutext;
+				 background-color: menu;
+				 padding-left: 10px;
+				 padding-right: 15px;
+				 text-decoration: none;}
+
+.cmenuItemOver	{color: highlighttext;
+				 background-color: highlight;
+				 padding-left: 10px;
+ 				 padding-right: 15px;
+ 				 text-decoration: none;}
+				 
+.cmenuItemOver A	{color: highlighttext;
+				 background-color: highlight;
+				 padding-left: 10px;
+ 				 padding-right: 15px;
+ 				 text-decoration: none;
+				 cursor: default;}
+				 
+.cmenuItem A		{color: menutext;
+				 background-color: menu;
+				 padding-left: 10px;
+				 padding-right: 15px;
+				 text-decoration: none;
+				 cursor: default;}
+				 
+.cmore			{font-family: WebDings;
+				 text-align: right;
+				 position: absolute;}
+
+.fakelink               {color: blue;
+                         text-decoration: underline;
+                        }

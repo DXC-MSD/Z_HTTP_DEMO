@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="simulator.js"></script>
+        <style>
+
+            .output {
+                position: absolute;
+                top: 20px;
+                height: 90%;
+                width: 600px;
+                font-size: small;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            #svn {
+                left: 20px;
+                background-color: black;
+                color: chartreuse;
+                
+            }
+            #git {
+                left: 640px;
+                background-color: midnightblue;
+                color: antiquewhite;
+            }
+        </style>
+            
+    </head>
+    <body>
+        <div class="output" id="svn">Hello World</div>            
+        <div class="output" id="git">Hello World</div>
+        <script language="javascript">
+            execute();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Styles</title>
+        <link rel="stylesheet" href="QA2Style.css" type="text/css"/>
+    </head>
+
+        <body class="main">
+            <!-- GENERIC FRAME BODY -->
+            
+
+
+<div id="mainForm">
+
+
+
+
+
+
+
+
+
+
+<div id="HEADER" role="heading" class="headerbar"></div>
+<div id="FOOTER" role="contentinfo" class="footerbar"></div>
+
+<div id="SCREEN_ID" class="label_txt pos y1 x2 brightText" style="white-space: nowrap; width:27.60ex;">
+SDT1AT00000203MAR202003
+</div>
+<script type="text/javascript">
+    var myPageArray = new Array();
+    var myPageWindowsArray = new Array();
+    thisField = '';
+    lastField = '';
+    currField = 'null';
+    nextOPrev = '';
+    semaphore = '1'; 
+    popupMenu = 'false';
+    todayDate = '03/03/2020';
+    popup     = "false";
+    error     = "false";
+    thisElt   = null;
+    ctx       = "/SWIFTT";
+    lang 	  = "ENG/";
+
+function createPageArray() {
+  
+return true;
+}
+</script>
+<!-- script type='text/javascript' src='/SWIFTT/commons/js/commonScript1.js'></script -->
+<script type="text/javascript" src="/SWIFTT/commons/js/commonScript1.js"></script>
+<script type="text/javascript" src="/SWIFTT/commons/js/Sidebar.js"></script><div id="topdeck" class="popper"> </div>
+<form name="form1" id="form1" method="post" action="/SWIFTT/process" target="_top">
+<div style="position:absolute; top:-20; left:-20">
+<input name="stopper1" class="invisibleSubmit" type="BUTTON" onfocus="selectFirstField();" value="" tabindex="1">
+</div>
+  <input type="hidden" name="activeField" value="eventdti">
+  <input type="hidden" name="placeHolder" value="4">
+  <input type="hidden" name="processTime" value="">
+  <!-- input type="hidden" name="glActivty" value=" "-->
+  <input type="hidden" name="submitted" id="submitted" value="false">
+  <input name="hiddenSubmit" class="invisibleSubmit" type="SUBMIT">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="hiddenLookupLabel" id="hiddenLookupLabel" value="null">
+
+
+     
+<div class="reversed pos y2  defaultScreenTitleStyle" style="white-space: nowrap;">&nbsp;</div>
+<div class="reversed pos y2  defaultScreenTitleStyle" style="white-space: nowrap;">&nbsp;&nbsp;DATA&nbsp;ADD/CHANGE&nbsp;(1)</div>
+     <div id="underline1" class="output_cell  pos y6 x1" style="white-space: nowrap; width:1.30ex; text-align:left;"></div><div class="output_cell underlineNew pos y7 x1 z-1"></div>
+
+
+     
+     
+<div class="pos y8 x1 labelText" style="white-space: nowrap; width:16.90ex;">Date&nbsp;of&nbsp;event</div>
+     <div class="pos y8 xi31 z-1" style="width:9.10ex;"><input name="eventdti" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000000" maxlength="6" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y8 x43 labelText" style="white-space: nowrap; width:20.80ex;">Reason&nbsp;for&nbsp;event</div>
+     <div class="pos y8 xi70 z-1" style="width:5.20ex;"><input name="eventcde" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000" maxlength="3" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y9 x1 labelText" style="white-space: nowrap; width:20.80ex;">Date&nbsp;ceased&nbsp;work</div>
+     <div class="pos y9 xi31 z-1" style="width:9.10ex;"><input name="lastwrkdti" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000000" maxlength="6" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y9 x43 labelText" style="white-space: nowrap; width:26.00ex;">Training&nbsp;course&nbsp;type</div>
+     <div class="pos y9 xi70 z-1" style="width:2.60ex;"><input name="coursespcd" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="1" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y10 x1 labelText" style="white-space: nowrap; width:29.90ex;">Loss&nbsp;of&nbsp;weekly&nbsp;earnings</div>
+     <div class="pos y10 xi31 z-1" style="width:11.70ex;"><input name="earnlost" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="8" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y10 x43 labelText" style="white-space: nowrap; width:14.30ex;">Expiry&nbsp;date</div>
+     <div class="pos y10 xi70 z-1" style="width:9.10ex;"><input name="expirydti" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000000" maxlength="6" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y11 x1 labelText" style="white-space: nowrap; width:35.10ex;">Amount&nbsp;of&nbsp;holiday/other&nbsp;pay</div>
+     <div class="pos y11 xi31 z-1" style="width:11.70ex;"><input name="holpayamt" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="8" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y11 x43 labelText" style="white-space: nowrap; width:28.60ex;">Days&nbsp;holiday/other&nbsp;pay</div>
+     <div class="pos y11 xi70 z-1" style="width:3.90ex;"><input name="holpaydays" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="2" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y12 x8 labelText" style="white-space: nowrap; width:14.30ex;">&nbsp;&nbsp;&nbsp;sick&nbsp;pay</div>
+     <div class="pos y12 xi31 z-1" style="width:11.70ex;"><input name="sicpayamt" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="8" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y12 x48 labelText" style="white-space: nowrap; width:10.40ex;">sick&nbsp;pay</div>
+     <div class="pos y12 xi70 z-1" style="width:3.90ex;"><input name="sicpaydays" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="2" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y13 x1 labelText" style="white-space: nowrap; width:29.90ex;">Avg&nbsp;gross&nbsp;wkly&nbsp;earnings</div>
+     <div class="pos y13 xi31 z-1" style="width:11.70ex;"><input name="earning" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="8" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y13 x43 labelText" style="white-space: nowrap; width:31.20ex;">Frequency&nbsp;of&nbsp;declaration</div>
+     <div class="pos y13 xi70 z-1" style="width:3.90ex;"><input name="decfreq" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="2" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y14 x1 labelText" style="white-space: nowrap; width:29.90ex;">YP/YPP&nbsp;Reason&nbsp;for&nbsp;grant</div>
+     <div class="pos y14 xi31 z-1" style="width:3.90ex;"><input name="indepcircm" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="00" maxlength="2" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y14 x43 labelText" style="white-space: nowrap; width:24.70ex;">Youth&nbsp;Activity&nbsp;code</div>
+     <div class="pos y14 xi70 z-1" style="width:2.60ex;"><input name="actstatus" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="1" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+
+     
+<div class="pos y15 x1 labelText" style="white-space: nowrap; width:24.70ex;">Partner&nbsp;expiry&nbsp;date</div>
+     <div class="pos y15 xi31 z-1" style="width:9.10ex;"><input name="partnerExpirydti" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000000" maxlength="6" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y15 x43 labelText" style="white-space: nowrap; width:27.30ex;">Partner&nbsp;activity&nbsp;code</div>
+     <div class="pos y15 xi70 z-1" style="width:2.60ex;"><input name="parnerActstatus" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="1" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+
+     
+<div class="pos y16 x1 labelText" style="white-space: nowrap; width:36.40ex;">Reason&nbsp;for&nbsp;Emergency&nbsp;Service</div>
+     <div class="pos y16 xi31 z-1" style="width:5.20ex;"><input name="ebrsncde" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000" maxlength="3" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y16 x43 labelText" style="white-space: nowrap; width:20.80ex;">Entitlement&nbsp;code</div>
+     <div class="pos y16 xi70 z-1" style="width:3.90ex;"><input name="entitlecde" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="0" maxlength="2" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+             
+     
+     
+<div class="pos y17 x1 labelText" style="white-space: nowrap; width:26.00ex;">Rate&nbsp;of&nbsp;payment&nbsp;code</div>
+     <div class="pos y17 xi31 z-1" style="width:4.50ex;"><input name="srtetcde" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000" maxlength="3" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y17 x43 labelText" style="white-space: nowrap; width:20.80ex;">Entitlement&nbsp;date</div>
+     <div class="pos y17 xi70 z-1" style="width:9.10ex;"><input name="entdti" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="000000" maxlength="6" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+              
+     
+<div class="pos y18 x1 labelText" style="white-space: nowrap; width:33.80ex;">Cared&nbsp;for&nbsp;by&nbsp;Partner&nbsp;(Y/N)</div>
+     <div class="pos y18 xi31 z-1" style="width:2.60ex;"><input name="cfbyprtnr" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="1" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+<div class="pos y18 x43 labelText" style="white-space: nowrap; width:27.30ex;">Living&nbsp;at&nbsp;home?&nbsp;(Y/N)</div>
+     <div class="pos y18 xi70 z-1" style="width:2.60ex;"><input name="livathome" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="1" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+              
+     
+<div class="pos y19 x1 labelText" style="white-space: nowrap; width:20.80ex;">Caring&nbsp;for&nbsp;:&nbsp;SWN</div>
+     <div class="pos y19 xi31 z-1" style="width:13.00ex;"><input name="cfswn" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:right;" value="987654321" maxlength="9" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>         
+     
+<div class="pos y19 x43 labelText" style="white-space: nowrap; width:24.70ex;">Grandparented&nbsp;(Y/N)</div>
+     <div class="pos y19 xi70 z-1" style="width:1.60ex;"><input name="grndprntd" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="Y" maxlength="1" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+     
+<div class="pos y20 x11 labelText" style="white-space: nowrap; width:9.10ex;">&nbsp;:&nbsp;Name</div>
+     <div class="pos y20 xi31 z-1" style="width:29.90ex;"><input name="cfname" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="22" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+     
+<div class="pos y21 x1 labelText" style="white-space: nowrap; width:37.70ex;">Reason&nbsp;why&nbsp;SWN&nbsp;is&nbsp;not&nbsp;entered</div>
+     <div class="pos y21 xi31 z-1" style="width:2.60ex;">
+<select name="noswnrsncde" onkeypress="return findOption(this)" onhelp="return fieldHelp(&quot;noswnrsncde&quot;)" onfocus="doFocus(this)" class="input_drop " disabled="">
+<option value="0" label="  ">  </option>
+<option value="01" label="Caring for a child">Caring for a child</option>
+<option value="02" label="No SWIFTT record">No SWIFTT record</option>
+</select>
+</div>
+     
+<div class="pos y21 x43 labelText" style="white-space: nowrap; width:22.10ex;">WEP&nbsp;opt&nbsp;out&nbsp;(Y/N)</div>
+     <div class="pos y21 xi70 z-1" style="width:2.60ex;"><input name="wepoptout" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="1" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" class="input_cell  z-2 w-100"></div>
+     
+     
+
+
+<input type="hidden" name="action_key" value="PFKey0">
+<input type="hidden" name="screen" value="SDT1A">
+<input type="hidden" name="focusField" value="eventdti">
+<input type="hidden" name="focusPrevF" value="">
+<input type="hidden" name="focusNxtPr" value="">
+<input type="hidden" name="semaphore" value="">
+<input type="hidden" name="lastResort" value="Enter" tabindex="999999">
+
+
+<input type="hidden" name="glActivty" id="glActivty" value=""></form>
+
+<script type="text/javascript">
+</script>
+
+
+
+<div class="clientPartnerBanner">
+     <div id="line4" class="output_cell  bold pos y4 x2" style="white-space: nowrap; width:104.00ex; text-align:left;"><div class="pre_fmt">                                                                               </div></div>
+     <div id="line5" class="output_cell  bold pos y5 x2" style="white-space: nowrap; width:104.00ex; text-align:left;"><div class="pre_fmt">                                                                               </div></div>
+</div>
+
+
+     <div class="brightText">
+         <div id="glUser" class="output_cell  pos y1 x50" style="white-space: nowrap; width:28.60ex; text-align:left;"><div class="pre_fmt">JONRAY - 99           </div></div>
+     </div>
+     <div class="brightText">
+         <div id="glSysdesc" class="output_cell  pos y1 x70" style="white-space: nowrap; width:9.10ex; text-align:left;">SDEV28&nbsp;</div>
+     </div>
+     <div id="glSecured" class="output_cell  pos y2 x81" style="white-space: nowrap; width:18.20ex; text-align:left;"></div>
+     
+     <div class="pos y25 x7 brightText" style="white-space:nowrap;width:16.90ex;">Next activity</div>
+     
+     
+     
+     <div class="pos y25 xi21 z-1" style="width:65.00ex;"><input name="glActivty" type="text" style="padding-left:0.54ex; padding-right:0.54ex; text-align:left;" value="" maxlength="49" oninput="return makeUpperCase(this);" onfocus="doFocus(this)" onkeyup="return checkMaxLength(this,event)" hascursor="yes" class="input_cell  z-2 w-100"></div>
+     <div class="pos y25 x69">
+         <button class="iconButton" onclick="copyToClipboard();">
+             <i class="tiny material-icons copyButton">content_copy</i>
+         </button>
+     </div>
+
+<div id="buttondiv">
+<div id="functionKeys">
+<!-- 
+    <ul style="padding: 0px;">
+        <li>
+            <button id="PFKey1" name="PFKey1" class="actionButton" onclick="javaScript:doAction('PFKey1')">SDT1I (F1)</button>
+        </li>
+        <li>
+            <button id="PFKey2" name="PFKey2" class="actionButton" onclick="javaScript:doAction('PFKey2')">SGRT  (F2)</button>
+        </li>
+        <li>
+            <button id="PFKey3" name="PFKey3" class="actionButton" onclick="javaScript:doAction('PFKey3')">SSUPI (F3)</button>
+        </li>
+        <li>
+            <button id="PFKey4" name="PFKey4" class="actionButton" onclick="javaScript:doAction('PFKey4')">INCMH (F4)</button>
+        </li>
+        <li>
+            <button id="PFKey5" name="PFKey5" class="actionButton" onclick="javaScript:doAction('PFKey5')">SHODA (F5)</button>
+        </li>
+        <li>
+            <button id="PFKey6" name="PFKey6" class="actionButton" onclick="javaScript:doAction('PFKey6')">SPBR  (F6)</button>
+        </li>
+        <li>
+            <button id="PFKey7" name="PFKey7" class="actionButton" onclick="javaScript:doAction('PFKey7')">SWTDA (F7)</button>
+        </li>
+        <li>
+            <button id="PFKey8" name="PFKey8" class="actionButton" onclick="javaScript:doAction('PFKey8')">      (F8)</button>
+        </li>
+    </ul>
+-->
+</div>
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+   saveSelectedDropDownItemLabel('noswnrsncde');
+   var serviceType = "      ";
+   var isnotCaring = serviceType.indexOf('SLP')==-1 &&
+                     serviceType.indexOf('DPBCS1')==-1;
+   
+   disabledDropdown('noswnrsncde',isnotCaring);
+</script>
+
+            <div class="messagebar">
+                
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">   
+<meta name="expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+
+
+
+
+
+
+
+
+
+
+
+<div id="message" class="brightText">
+    <!-- divider -->
+    
+        <div class="errorText">
+        <i class="material-icons" style="font-size: 17px;">error</i>
+    
+    INPUTERROR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SWN&nbsp;mandatory&nbsp;before&nbsp;screen&nbsp;entry&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#00073
+<br>
+    
+        </div>
+    
+</div>
+
+            </div>	
+          
+    
+        
+
+
+    </body>
+</html>

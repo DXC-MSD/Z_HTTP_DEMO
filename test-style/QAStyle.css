@@ -1,0 +1,648 @@
+frame {
+    border: 1 solid gray;
+}
+
+body {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 15px;
+    background-color: #000080;
+    color: #CCCCCC;
+    display: inline;
+
+}
+
+.main {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #000080;
+    color: #CCCCCC;
+    display: inline;
+	margin: 0;
+}
+
+.pre_fmt {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #000080;
+    display: inline;
+	margin: 0;
+}
+
+.pre_fmt_rev {
+    font-family: Arial Monospaced, Courier New;
+	background-color: #CCCCCC;
+ 	color: #000080;
+    display: inline;
+	margin: 0;
+}
+
+.reversed {
+	background-color: #CCCCCC;
+ 	color: #000080;
+}
+
+.debug {
+    font-family: Arial Monospaced, Courier New;
+	color: black;
+    display: inline;
+}
+
+body.navigation {
+    color: #CCCCCC;
+    background-color: #000080;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    font-family: Arial Monospaced, Courier New;
+    display: inline;
+}
+
+div.bold {
+    font-family: Arial Monospaced, Courier New;
+	/*font-weight: bold;*/
+ 	color: #FFFFFF;
+}
+
+
+div.underlineNew {
+	border-top: 1px solid #FFF;
+	width:100%;
+}
+
+div.secure {
+	background-color: black;
+	color: gray;
+}
+div.blinking {
+	color: red;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:link {
+    color: #CCCCCC;
+}
+
+.Action_button {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 15px;
+    width: 60px;
+    height: 21px;
+}
+
+input {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 15px;
+	vertical-align: top;
+}
+
+.output_cell1 {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 26px;
+    vertical-align: top;
+    color: #CCCCCC;
+    background-color: #000080;
+}
+
+.output_cell {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+    /*color: #FFFFFF;*/
+    border: thin;
+    /* background-color: #000080; */
+}
+
+input.input_cell {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+ 	color: #FFFFFF;
+    background-color: #000080;
+    border-width: 1;
+}
+input.input_cell_right {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: top;
+    text-align: right;
+ 	color: #FFFFFF;
+    background-color: #000080;
+}
+input.input_cell_reversed {
+    font-family: Arial Monospaced, Courier New;
+    color:  #000080;
+	background-color: #CCCCCC;
+	vertical-align: top;
+	border-width: 1px;
+    height: 17px; 
+}
+
+input.invisibleSubmit {
+    font-family: Arial Monospaced, Courier New;
+	color: #000080;
+    vertical-align: bottom;
+    background-color: transparent;
+    border: none;
+}
+
+.menu {
+    color: black;
+    background-color: #000080;
+}
+
+.main_menu {
+    color: black;
+    background-color: #000080;
+}
+
+.menu P {
+}
+
+.menu a, a:visited, a:link {
+    font-size: x-small;
+    color: #CCCCCC;
+}
+
+.navigation.app {
+    font-size: 100%;
+}
+
+.navigation.second-tier {
+    font-size: 100%;
+}
+
+.navigation.third-tier {
+    font-size: 80%;
+}
+
+.navigation table {
+    background-color: #000080;
+    padding: 0;
+    margin: 0;
+}
+
+
+.popper
+{
+position : absolute;
+visibility : hidden;
+zIndex: 9999;
+}
+
+
+.input_cell {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: middle;
+ 	color: #FFFFFF;
+ 	height: 17px;
+ 	line-height: 100%;
+ 	padding: 0;
+}
+
+.input_cell1 {
+    font-family: Arial Monospaced, Courier New;
+	vertical-align: middle;
+ 	color: #151515;
+	height: 19px; 
+	border: 2px; 	
+}
+
+.special_input_cell {
+    color: #000080;
+    background-color: #CCCCCC;
+    font-family: Arial Monospaced, Courier New;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    vertical-align: top;
+}
+
+.text_label {
+    font-family: Arial Monospaced, Courier New;
+	text-align: right;
+    vertical-align: top;
+}
+
+.error-heading {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.error {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.stacktrace {
+    font-family: Arial Monospaced, Courier New;
+}
+
+.page_heading {
+    color: #000080;
+    background-color: #CCCCCC;
+    padding: 4;
+}
+
+.inner_table {
+    border: 2 #DDDDBD solid;
+    vertical-align: top;
+}
+
+.inner_table td {
+    vertical-align: top;
+}
+
+
+
+.inner_table tr {
+    vertical-align: top;
+}
+
+.inner_table th {
+    background-color: #000080;
+    padding: 4;
+}
+
+.tinyInfo {
+    vertical-align: top;
+}
+
+.tinyInfo {
+    vertical-align: top;
+    font-size: 9px;
+}
+
+.Error {
+    color: red;
+}
+
+.Message {
+    color: white;
+}
+
+.Warning {
+    color: #CCCCCC;
+}
+
+.break {
+    height: 15px;
+}
+
+.main_table {
+    width: 100%;
+}
+
+.fab_button {
+    cursor: hand;
+}
+
+img.edit_button {
+    cursor: hand;
+}
+
+.integer_data {
+    text-align: right;
+}
+
+.long_data {
+    text-align: right;
+}
+
+.float_data {
+    text-align: right;
+}
+
+.decimal_data {
+    text-align: right;
+}
+
+.money_data {
+    text-align: right;
+}
+
+.string_data {
+    text-align: left;
+}
+
+.fixed_length_string_data {
+    text-align: left;
+}
+
+.date_data {
+    text-align: left;
+}
+
+.timestamp_date {
+    text-align: left;
+}
+
+.cmenu              {position: absolute;
+                 font-family: MS Sans Serif;
+                 font-size: 15px;
+                 background-color: menu;
+                 color: menutext;
+                 border: 4px threedhighlight outset;
+                 cursor: default;
+                 visibility: hidden;
+                 line-height: 140%;}
+
+.cvisibleMenu   {position: absolute;
+                 font-family: MS Sans Serif;
+                 font-size: 15px;
+                 background-color: menu;
+                 color: menutext;
+                 border: 4px threedhighlight outset;
+                 cursor: default;
+                 visibility: visible;
+                 line-height: 140%;}
+
+.cmenuItem      {color: menutext;
+                 background-color: menu;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;}
+
+.cmenuItemOver  {color: highlighttext;
+                 background-color: highlight;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;}
+
+.cmenuItemOver A    {color: highlighttext;
+                 background-color: highlight;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;
+                 cursor: default;}
+
+.cmenuItem A        {color: menutext;
+                 background-color: menu;
+                 padding-left: 12px;
+                 padding-right: 17px;
+                 text-decoration: none;
+                 cursor: default;}
+
+.cmore          {font-family: WebDings;
+                 text-align: right;
+                 position: absolute;}
+
+.fakelink               {color: blue;
+                         text-decoration: underline;
+                        }
+.bold {
+    font-family: Arial Monospaced, Courier New;
+	/*font-weight: bold;*/
+ 	color: #FFFFFF;
+}
+
+.label {
+    font-family: Arial Monospaced, Courier New;
+    font-size: 15px;	
+}
+
+.pos {position: absolute; }
+
+.x1 {left:1.2ex}
+.x2 {left:2.4ex}
+.x3 {left:3.6ex}
+.x4 {left:4.8ex}
+.x5 {left:6.0ex}
+.x6 {left:7.2ex}
+.x7 {left:8.4ex}
+.x8 {left:9.6ex}
+.x9 {left:10.8ex}
+.x10 {left:12.0ex}
+.x11 {left:13.2ex}
+.x12 {left:14.4ex}
+.x13 {left:15.60ex}
+.x14 {left:16.80ex}
+.x15 {left:18.00ex}
+.x16 {left:19.20ex}
+.x17 {left:20.40ex}
+.x18 {left:21.60ex}
+.x19 {left:22.80ex}
+.x20 {left:24.00ex}
+.x21 {left:25.20ex}
+.x22 {left:26.40ex}
+.x23 {left:27.60ex}
+.x24 {left:28.80ex}
+.x25 {left:30.00ex}
+.x26 {left:31.20ex}
+.x27 {left:32.40ex}
+.x28 {left:33.60ex}
+.x29 {left:34.80ex}
+.x30 {left:36.00ex}
+.x31 {left:37.20ex}
+.x32 {left:38.40ex}
+.x33 {left:39.60ex}
+.x34 {left:40.80ex}
+.x35 {left:42.00ex}
+.x36 {left:43.20ex}
+.x37 {left:44.40ex}
+.x38 {left:45.60ex}
+.x39 {left:46.80ex}
+.x40 {left:48.00ex}
+.x41 {left:49.20ex}
+.x42 {left:50.40ex}
+.x43 {left:51.60ex}
+.x44 {left:52.80ex}
+.x45 {left:54.00ex}
+.x46 {left:55.20ex}
+.x47 {left:56.40ex}
+.x48 {left:57.60ex}
+.x49 {left:58.80ex}
+.x50 {left:60.00ex}
+.x51 {left:61.20ex}
+.x52 {left:62.40ex}
+.x53 {left:63.60ex}
+.x54 {left:64.80ex}
+.x55 {left:66.00ex}
+.x56 {left:67.20ex}
+.x57 {left:68.40ex}
+.x58 {left:69.60ex}
+.x59 {left:70.80ex}
+.x60 {left:72.00ex}
+.x61 {left:73.20ex}
+.x62 {left:74.40ex}
+.x63 {left:75.60ex}
+.x64 {left:76.80ex}
+.x65 {left:78.00ex}
+.x66 {left:79.20ex}
+.x67 {left:80.40ex}
+.x68 {left:81.60ex}
+.x69 {left:82.80ex}
+.x70 {left:84.00ex}
+.x71 {left:85.20ex}
+.x72 {left:86.40ex}
+.x73 {left:87.60ex}
+.x74 {left:88.80ex}
+.x75 {left:90.00ex}
+.x76 {left:91.20ex}
+.x77 {left:92.40ex}
+.x78 {left:93.60ex}
+.x79 {left:94.80ex}
+.x80 {left:96.00ex}
+
+.xi1 {left:0.6ex}
+.xi2 {left:1.8ex}
+.xi3 {left:3.0ex}
+.xi4 {left:4.2ex}
+.xi5 {left:5.4ex}
+.xi6 {left:6.6ex}
+.xi7 {left:7.8ex}
+.xi8 {left:9.0ex}
+.xi9 {left:10.2ex}
+.xi10 {left:11.4ex}
+.xi11 {left:12.6ex}
+.xi12 {left:13.8ex}
+.xi13 {left:15.00ex}
+.xi14 {left:16.20ex}
+.xi15 {left:17.40ex}
+.xi16 {left:18.60ex}
+.xi17 {left:19.80ex}
+.xi18 {left:21.00ex}
+.xi19 {left:22.20ex}
+.xi20 {left:23.40ex}
+.xi21 {left:24.60ex}
+.xi22 {left:25.80ex}
+.xi23 {left:27.00ex}
+.xi24 {left:28.20ex}
+.xi25 {left:29.40ex}
+.xi26 {left:30.60ex}
+.xi27 {left:31.80ex}
+.xi28 {left:33.00ex}
+.xi29 {left:34.20ex}
+.xi30 {left:35.40ex}
+.xi31 {left:36.60ex}
+.xi32 {left:37.80ex}
+.xi33 {left:39.00ex}
+.xi34 {left:40.20ex}
+.xi35 {left:41.40ex}
+.xi36 {left:42.60ex}
+.xi37 {left:43.80ex}
+.xi38 {left:45.00ex}
+.xi39 {left:46.20ex}
+.xi40 {left:47.40ex}
+.xi41 {left:48.60ex}
+.xi42 {left:49.80ex}
+.xi43 {left:51.00ex}
+.xi44 {left:52.20ex}
+.xi45 {left:53.40ex}
+.xi46 {left:54.60ex}
+.xi47 {left:55.80ex}
+.xi48 {left:57.00ex}
+.xi49 {left:58.20ex}
+.xi50 {left:59.40ex}
+.xi51 {left:60.60ex}
+.xi52 {left:61.80ex}
+.xi53 {left:63.00ex}
+.xi54 {left:64.20ex}
+.xi55 {left:65.40ex}
+.xi56 {left:66.60ex}
+.xi57 {left:67.80ex}
+.xi58 {left:69.00ex}
+.xi59 {left:70.20ex}
+.xi60 {left:71.40ex}
+.xi61 {left:72.60ex}
+.xi62 {left:73.80ex}
+.xi63 {left:75.00ex}
+.xi64 {left:76.20ex}
+.xi65 {left:77.40ex}
+.xi66 {left:78.60ex}
+.xi67 {left:79.80ex}
+.xi68 {left:81.00ex}
+.xi69 {left:82.20ex}
+.xi70 {left:83.40ex}
+.xi71 {left:84.60ex}
+.xi72 {left:85.80ex}
+.xi73 {left:87.00ex}
+.xi74 {left:88.20ex}
+.xi75 {left:89.40ex}
+.xi76 {left:90.60ex}
+.xi77 {left:91.80ex}
+.xi78 {left:93.00ex}
+.xi79 {left:94.20ex}
+.xi80 {left:95.40ex}
+
+.y1 {top:0px}
+.y2 {top:18px}
+.y3 {top:36px}
+.y4 {top:54px}
+.y5 {top:72px}
+.y6 {top:90px}
+.y7 {top:108px}
+.y8 {top:126px}
+.y9 {top:144px}
+.y10 {top:162px}
+.y11 {top:180px}
+.y12 {top:198px}
+.y13 {top:216px}
+.y14 {top:234px}
+.y15 {top:252px}
+.y16 {top:270px}
+.y17 {top:288px}
+.y18 {top:306px}
+.y19 {top:324px}
+.y20 {top:342px}
+.y21 {top:360px}
+.y22 {top:378px}
+.y23 {top:396px}
+.y24 {top:414px}
+.y25 {top:432px}
+.y26 {top:450px}
+.y27 {top:468px}
+.y28 {top:486px}
+.y29 {top:504px}
+.y30 {top:522px}
+
+.z-0{z-index:-1}
+.z-1{z-index:1}
+.z-2{z-index:2}
+
+.w-100{width: 100%}
+
+textarea.notes {
+	font-size: 100%;
+	color: #FFFFFF;
+	background-color: #000080;
+	overflow: hidden;
+	font-family: Arial Monospaced, Courier New;
+	height: 291px;
+    line-height: 18px;
+}
+
+textarea.diary {
+	font-size: 100%;
+	color: #FFFFFF;
+	background-color: #000080;
+	overflow: hidden;
+	font-family: Arial Monospaced, Courier New;
+	height: 99px;
+    line-height: 13.95px;
+}
+
+iframe.mainFrame {
+	height: 398px;
+	padding: 0px;
+	margin: 0px;
+}
+
+iframe.mainFrame3 {
+	height: 91%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.defaultScreenTitleStyle{
+	width:98%;
+	left:11px;
+	text-align:center;
+}

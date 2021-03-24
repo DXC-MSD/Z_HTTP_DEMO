@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+
+            function writeToOutput(text){
+
+                var outputDiv = document.getElementById("output");
+
+                outputDiv.innerHTML += text + "<br/>"
+            }
+
+            function clear(){
+                var outputDiv = document.getElementById("output");
+                outputDiv.innerHTML = "";
+                return false;
+            }
+
+            function a(event){
+                writeToOutput("On Input");
+                return true;
+            }
+
+            function b(event){
+                writeToOutput("On Key Up");
+                writeToOutput("> event.key: " + event.key);
+                writeToOutput("> event.code: " + event.code);
+                writeToOutput("> event.keyCode: " + event.keyCode);
+                writeToOutput("> event.which: " + event.which);
+                return true;
+            }
+
+            function c(event){
+                writeToOutput("On Key Down");
+                writeToOutput("> event.key: " + event.key);
+                writeToOutput("> event.code: " + event.code);
+                writeToOutput("> event.keyCode: " + event.keyCode);
+                writeToOutput("> event.which: " + event.which);
+                return true;
+            }
+            
+            function d(event){
+                writeToOutput("On Change");
+                return true;
+            }
+
+
+
+        </script>
+        <style>
+        input {text-transform: uppercase;}
+        #output {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        </style>
+            
+    </head>
+    <body>
+        <form>
+            <input type="text" id="upper"><br>
+            <input type="text" name="test" value=""
+                oninput="return a(event);" 
+                onkeyup="return b(event);" 
+                onkeydown="return c(event);" 
+                onchange="return d(event);"
+                style="border-width: 1"
+                >&nbsp;
+                <input type="submit" onsubmit="clear()" value="Clear IE" name="clear">
+                <button onclick="clear()">Clear EDGE</button>
+            </form>
+        <div id="output"></div>
+        <script>
+            document.querySelector("#upper").addEventListener("keydown", function(event){
+                writeToOutput("On Key Down - Event Listener");
+                writeToOutput(">> event.key: " + event.key);
+                writeToOutput(">> event.code: " + event.code);
+                writeToOutput(">> event.keyCode: " + event.keyCode);
+                writeToOutput(">> event.which: " + event.which);
+
+            });
+       </script>
+            
+    </body>
+</html>
